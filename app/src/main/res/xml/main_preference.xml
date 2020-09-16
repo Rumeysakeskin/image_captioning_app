@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="Voice">
+        <SeekBarPreference
+        android:key="seek_speed"
+        android:title="Voice speed"
+        android:defaultValue="50"
+        android:max="100"
+        app:showSeekBarValue="true"/>
+        <SeekBarPreference
+            android:key="seek_pitch"
+            android:title="Voice pitch"
+            android:defaultValue="50"
+            android:max="100"
+            app:showSeekBarValue="true"/>
+
+    </PreferenceCategory>
+
+<!--    <PreferenceCategory-->
+<!--            android:title="Language">-->
+<!--            <SwitchPreference-->
+<!--                android:key="switch"-->
+<!--                android:title="Select Language"-->
+<!--                android:summaryOff="Original Language"-->
+<!--                android:summaryOn="Custom Language"-->
+<!--                android:defaultValue="true"/>-->
+
+<!--        </PreferenceCategory>-->
+
+    <PreferenceCategory
+    android:title="Language">
+    <SwitchPreference
+        android:key="language"
+        android:title="Select Language"
+        android:summaryOff="Original Language"
+        android:summaryOn="Custom Language"
+        android:defaultValue="false"/>
+
+</PreferenceCategory>
+</PreferenceScreen>
